@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202124;
+    font-family: 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.afk-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.afk-box {
+    padding: 30px 60px;
+    border-radius: 20px;
+    background-color: red;
+    animation: pulseColor 0.2s infinite alternate;
+}
+
+.afk-text {
+    font-weight: 800;
+    color: black;
+    white-space: nowrap;
+    animation: font-size 1s infinite;
+    font-size: 4em;
+}
+
+@keyframes pulseColor {
+    0% { background-color: red; }
+    100% { background-color: red; }
+}
+
+@keyframes font-size {
+    0% { font-size: 7em; }
+    50% { font-size: 4em; }
+    100% { font-size: 7em; }
+}
+
+.on {
+    background-color: green !important;
+    animation: none !important;
+}
+
+.on .afk-text {
+    animation: none !important;
+    font-size: 7em !important;
+}
+
+.timer-label {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.timer {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}

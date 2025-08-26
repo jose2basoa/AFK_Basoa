@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="estilo.css">
+
+  <title>AFK</title>
+</head>
+<body>
+  <div class="afk-container">
+    <div class="afk-box" id="afkBox">
+      <div class="afk-text" id="afkText">ESTOU AFK E JÁ VOLTO</div>
+    </div>
+  </div>
+
+  <div class="timer-label">ESTOU AFK À:</div>
+
+  <div class="timer" id="timer">00:00:00:000</div>
+
+  <div class="buttons">
+    <button id="startBtn" onclick="startTimer()">Iniciar</button>
+    <button id="pauseBtn" class="hidden" onclick="pauseTimer()">Pausar</button>
+    <button id="resumeBtn" class="hidden" onclick="resumeTimer()">Continuar</button>
+    <button id="resetBtn" class="hidden" onclick="resetTimer()">Resetar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
